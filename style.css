@@ -1,0 +1,7 @@
+/* GreenBrew custom style (compiled CSS) */
+body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#fff; color:#222; }
+header { background: linear-gradient(135deg,#0d6efd, #6610f2); color:#fff; }
+.product img { height:220px; object-fit:cover; background:#f6f6f6; }
+.navbar-brand img { margin-right:8px; }
+#cart-contents table { max-width:800px; }
+.add-to-cart { position:relative; }

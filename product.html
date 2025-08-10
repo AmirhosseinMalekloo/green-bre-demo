@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product — Espresso Blend</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt="GreenBrew" height="36"> GreenBrew</a>
+    <div class="ms-auto">
+      <a href="cart.html" class="btn btn-outline-secondary">Cart <span id="cart-count-2" class="badge bg-secondary">0</span></a>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-5">
+  <div class="row g-4">
+    <div class="col-md-6">
+      <img src="assets/img/product1.svg" id="product-image" class="img-fluid rounded shadow-sm" alt="Espresso Blend">
+    </div>
+    <div class="col-md-6">
+      <h1>Espresso Blend</h1>
+      <p class="lead text-primary">$12.50</p>
+      <p>Small-batch, freshly roasted coffee. Notes of chocolate and caramel.</p>
+      <div class="mb-3">
+        <label for="qty" class="form-label">Quantity</label>
+        <input type="number" id="qty" class="form-control w-25" value="1" min="1">
+      </div>
+      <button class="btn btn-success btn-lg add-to-cart" data-id="1" data-name="Espresso Blend" data-price="12.5">Add to cart</button>
+
+      <hr>
+      <ul class="nav nav-tabs" id="prodTab" role="tablist">
+        <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#desc">Description</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#reviews">Reviews</button></li>
+      </ul>
+      <div class="tab-content p-3 border border-top-0">
+        <div class="tab-pane fade show active" id="desc">
+          <p>Full tasting notes, roast level, and brewing tips.</p>
+        </div>
+        <div class="tab-pane fade" id="reviews">
+          <p>No reviews yet — be the first to review!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-light py-4">
+  <div class="container text-center">
+    <small>GreenBrew demo — static front-end</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
